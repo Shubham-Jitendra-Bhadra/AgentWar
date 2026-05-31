@@ -1,6 +1,6 @@
 # AgentWar
 
-Two AI agent teams fight over a shared, simulated world. **Red** attacks, **Blue** defends, and a neutral **Referee** owns the ground truth and keeps score. Every move is made by a Claude agent with tool use, and you watch their reasoning play out turn by turn on a live leaderboard.
+Two AI agent teams fight over a shared, simulated world. **Red** attacks, **Blue** defends, and a neutral **Referee** owns the ground truth and keeps score. Every move is made by a agent with tool use, and you watch their reasoning play out turn by turn on a live leaderboard.
 
 ## Core Concept
 

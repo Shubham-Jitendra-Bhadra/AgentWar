@@ -10,6 +10,7 @@ dist/
 .venv/
 venv/
 env/
+.venv
 
 # Env / secrets
 .env
