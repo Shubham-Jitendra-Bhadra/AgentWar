@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Env / secrets
+.env
+.env.local
+*.key
+
+# W&B
+wandb/
+artifacts/
+
+# Logs / run output
+*.log
+runs/
+*.jsonl
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/

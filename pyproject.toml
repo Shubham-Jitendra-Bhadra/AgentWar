@@ -1,0 +1,16 @@
+[project]
+name = "agentwar"
+version = "0.1.0"
+description = "Red vs. blue AI agents fighting over a simulated world."
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+packages = ["agentwar"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

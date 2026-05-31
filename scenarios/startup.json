@@ -1,0 +1,16 @@
+{
+  "turn": 0,
+  "services": [
+    { "name": "api-gateway",     "exposed": true,  "patched": true,  "compromised": false, "isolated": false },
+    { "name": "auth-service",    "exposed": false, "patched": true,  "compromised": false, "isolated": false },
+    { "name": "billing-service", "exposed": false, "patched": false, "compromised": false, "isolated": false },
+    { "name": "s3-data-bucket",  "exposed": true,  "patched": false, "compromised": false, "isolated": false }
+  ],
+  "credentials": [
+    { "owner": "ci-deploy-key",  "leaked": true,  "rotated": false, "stolen": false },
+    { "owner": "s3-access-key",  "leaked": true,  "rotated": false, "stolen": false },
+    { "owner": "admin",          "leaked": false, "rotated": true,  "stolen": false }
+  ],
+  "alerts_fired": [],
+  "events": []
+}
