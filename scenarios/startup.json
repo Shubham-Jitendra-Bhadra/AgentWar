@@ -1,16 +1,28 @@
 {
   "turn": 0,
   "services": [
-    { "name": "api-gateway",     "exposed": true,  "patched": true,  "compromised": false, "isolated": false },
-    { "name": "auth-service",    "exposed": false, "patched": true,  "compromised": false, "isolated": false },
-    { "name": "billing-service", "exposed": false, "patched": false, "compromised": false, "isolated": false },
-    { "name": "s3-data-bucket",  "exposed": true,  "patched": false, "compromised": false, "isolated": false }
+    { "name": "web-frontend",     "exposed": true,  "patched": true,  "compromised": false, "isolated": false },
+    { "name": "api-gateway",      "exposed": true,  "patched": true,  "compromised": false, "isolated": false },
+    { "name": "s3-data-bucket",   "exposed": true,  "patched": false, "compromised": false, "isolated": false },
+    { "name": "ci-runner",        "exposed": true,  "patched": false, "compromised": false, "isolated": false },
+    { "name": "auth-service",     "exposed": false, "patched": true,  "compromised": false, "isolated": false },
+    { "name": "billing-service",  "exposed": false, "patched": false, "compromised": false, "isolated": false },
+    { "name": "user-database",    "exposed": false, "patched": false, "compromised": false, "isolated": false },
+    { "name": "internal-admin",   "exposed": false, "patched": false, "compromised": false, "isolated": false },
+    { "name": "message-queue",    "exposed": false, "patched": true,  "compromised": false, "isolated": false },
+    { "name": "logging-service",  "exposed": false, "patched": true,  "compromised": false, "isolated": false }
   ],
   "credentials": [
-    { "owner": "ci-deploy-key",  "leaked": true,  "rotated": false, "stolen": false },
-    { "owner": "s3-access-key",  "leaked": true,  "rotated": false, "stolen": false },
-    { "owner": "admin",          "leaked": false, "rotated": true,  "stolen": false }
+    { "owner": "ci-deploy-key",    "leaked": true,  "rotated": false, "stolen": false },
+    { "owner": "s3-access-key",    "leaked": true,  "rotated": false, "stolen": false },
+    { "owner": "db-root-password", "leaked": true,  "rotated": false, "stolen": false },
+    { "owner": "jenkins-token",    "leaked": true,  "rotated": false, "stolen": false },
+    { "owner": "slack-webhook",    "leaked": true,  "rotated": false, "stolen": false },
+    { "owner": "grafana-api-key",  "leaked": true,  "rotated": true,  "stolen": false },
+    { "owner": "admin",            "leaked": false, "rotated": true,  "stolen": false },
+    { "owner": "service-account",  "leaked": false, "rotated": true,  "stolen": false }
   ],
   "alerts_fired": [],
-  "events": []
+  "events": [],
+  "telemetry": []
 }
