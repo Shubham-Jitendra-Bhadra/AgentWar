@@ -1,0 +1,16 @@
+# LLM inference via W&B Inference (OpenAI-compatible endpoint)
+openai>=1.40.0
+
+# Weights & Biases: run tracking + leaderboard, and Weave for agent tracing
+wandb>=0.17.0
+weave>=0.51.0
+
+# API server for streaming agent thoughts to the frontend
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+
+# Data models / validation
+pydantic>=2.6.0
+
+# Config
+python-dotenv>=1.0.0
